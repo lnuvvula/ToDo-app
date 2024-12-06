@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster Pro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-clock"></i> TaskMaster Pro</h1>
+        <p class="subtitle">Organize your tasks with precision timing</p>
+        
+        <div class="add-todo">
+            <div class="input-group">
+                <input type="text" id="todoInput" placeholder="Add a new task...">
+                <span class="error-message"></span>
+            </div>
+            <div class="input-group">
+                <input type="datetime-local" id="dateTimeInput">
+                <span class="error-message"></span>
+            </div>
+            <button id="addButton">
+                <i class="fas fa-plus"></i> Add Task
+            </button>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <ul id="todoList"></ul>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
